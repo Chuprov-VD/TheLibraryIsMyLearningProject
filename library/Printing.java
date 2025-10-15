@@ -9,3 +9,5 @@ public class Printing {
         Scanner scanner = new Scanner(System.in);
         //scanner.close(); - не закрывать, чтобы можно было использовать в других классах
         return scanner.nextLine();
+        }
+}
