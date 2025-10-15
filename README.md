@@ -5,14 +5,14 @@
 Данный пакет реализует систему управления библиотекой с функционалом для работы с книгами и пользователями.
 
 ## Структура пакета
-library/
-├── Book/
-│ ├── Book.java
-│ └── BookManager.java
-├── User/
-│ ├── User.java
-│ └── UserManager.java
-└── Library.java
+library/  
+├── Book/  
+│ ├── Book.java  
+│ └── BookManager.java  
+├── User/  
+│ ├── User.java  
+│ └── UserManager.java  
+└── Library.java  
 
 ## Класс Library
 
