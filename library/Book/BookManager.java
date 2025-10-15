@@ -10,12 +10,11 @@ public class BookManager {
     ArrayList<Book> bookList = new ArrayList<>();
 
     public ArrayList<Book> getBookList() {
-        return bookList;
+        return new ArrayList<>(bookList);
     }
 
     public void setBookList(ArrayList<Book> bookList) {
         this.bookList.addAll(bookList);
-
     }
 
     public void addBook() {
@@ -30,7 +29,6 @@ public class BookManager {
                 bookList.add(book);
                 System.out.println("Книга добавлена: " + book.getBookName());
             }
-
         }
     }
 
@@ -42,10 +40,9 @@ public class BookManager {
 
     public void movingFrom(ArrayList<Book> bookListRemove) {
         for (Book book : bookListRemove) {
-           bookList.remove(search(book.getBookName()));
-
-            }
+            bookList.remove(search(book.getBookName()));
         }
+    }
 
     public Book search(String nameBook) {
         for (Book book : bookList) {
